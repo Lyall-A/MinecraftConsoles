@@ -1,0 +1,29 @@
+From 392f865ef232469e3318ed6c107c4d7e3c72ee7c Mon Sep 17 00:00:00 2001
+From: Lyall <me@lyall.lol>
+Date: Thu, 5 Mar 2026 15:38:36 +0000
+Subject: [PATCH] fix windows debug build
+
+---
+ Minecraft.Client/Windows64/Windows64_Minecraft.cpp | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/Minecraft.Client/Windows64/Windows64_Minecraft.cpp b/Minecraft.Client/Windows64/Windows64_Minecraft.cpp
+index d2251e4e..6b44278c 100644
+--- a/Minecraft.Client/Windows64/Windows64_Minecraft.cpp
++++ b/Minecraft.Client/Windows64/Windows64_Minecraft.cpp
+@@ -476,9 +476,9 @@ HRESULT InitDevice()
+ app.DebugPrintf("width: %d, height: %d\n", width, height);
+ 
+ 	UINT createDeviceFlags = 0;
+-#ifdef _DEBUG
+-	createDeviceFlags |= D3D11_CREATE_DEVICE_DEBUG;
+-#endif
++// #ifdef _DEBUG
++// 	createDeviceFlags |= D3D11_CREATE_DEVICE_DEBUG;
++// #endif
+ 
+ 	D3D_DRIVER_TYPE driverTypes[] =
+ 	{
+-- 
+2.53.0.windows.1
+

@@ -1,0 +1,24 @@
+From 14f4c2035645d89bc75d18d6ee0941e6c3d9dcf8 Mon Sep 17 00:00:00 2001
+From: Lyall <me@lyall.lol>
+Date: Thu, 5 Mar 2026 20:59:09 +0000
+Subject: [PATCH] disable xbox 360 deployment
+
+---
+ Minecraft.Client/Minecraft.Client.vcxproj | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/Minecraft.Client/Minecraft.Client.vcxproj b/Minecraft.Client/Minecraft.Client.vcxproj
+index 83c0671b..b9c355eb 100644
+--- a/Minecraft.Client/Minecraft.Client.vcxproj
++++ b/Minecraft.Client/Minecraft.Client.vcxproj
+@@ -886,6 +886,7 @@
+     <Deploy>
+       <DeploymentType>CopyToHardDrive</DeploymentType>
+       <DeploymentFiles>$(RemoteRoot)=$(ImagePath);$(RemoteRoot)\res=Common\res;$(RemoteRoot)=XboxMedia\AvatarAwards;$(RemoteRoot)\Tutorial=Common\Tutorial\Tutorial;$(RemoteRoot)=XboxMedia\584111F70AAAAAAA;$(RemoteRoot)=Xbox\kinect\speech;$(RemoteRoot)=XboxMedia\XZP\TMSFiles.xzp;$(RemoteRoot)\DummyTexturePack=Common\DummyTexturePack</DeploymentFiles>
++      <ExcludedFromBuild>true</ExcludedFromBuild>
+     </Deploy>
+   </ItemDefinitionGroup>
+   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ContentPackage_Vita|Xbox 360'">
+-- 
+2.53.0.windows.1
+
