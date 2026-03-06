@@ -1,0 +1,10 @@
+ipch
+x64
+*.opensdf
+*.sdf
+*.v11.suo
+*.vcxproj.user
+ContentPackage
+Debug
+Release
+x64_Debug
