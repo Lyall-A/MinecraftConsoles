@@ -4,13 +4,13 @@ Date: Thu, 5 Mar 2026 20:59:09 +0000
 Subject: [PATCH] disable xbox 360 deployment
 
 ---
- Minecraft.Client/Minecraft.Client.vcxproj | 1 +
+ Source/Minecraft.Client/Minecraft.Client.vcxproj | 1 +
  1 file changed, 1 insertion(+)
 
-diff --git a/Minecraft.Client/Minecraft.Client.vcxproj b/Minecraft.Client/Minecraft.Client.vcxproj
+diff --git a/Source/Minecraft.Client/Minecraft.Client.vcxproj b/Source/Minecraft.Client/Minecraft.Client.vcxproj
 index 83c0671b..b9c355eb 100644
---- a/Minecraft.Client/Minecraft.Client.vcxproj
-+++ b/Minecraft.Client/Minecraft.Client.vcxproj
+--- a/Source/Minecraft.Client/Minecraft.Client.vcxproj
++++ b/Source/Minecraft.Client/Minecraft.Client.vcxproj
 @@ -886,6 +886,7 @@
      <Deploy>
        <DeploymentType>CopyToHardDrive</DeploymentType>

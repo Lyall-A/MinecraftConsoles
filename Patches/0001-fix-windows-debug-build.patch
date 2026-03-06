@@ -4,13 +4,13 @@ Date: Thu, 5 Mar 2026 15:38:36 +0000
 Subject: [PATCH] fix windows debug build
 
 ---
- Minecraft.Client/Windows64/Windows64_Minecraft.cpp | 6 +++---
+ Source/Minecraft.Client/Windows64/Windows64_Minecraft.cpp | 6 +++---
  1 file changed, 3 insertions(+), 3 deletions(-)
 
-diff --git a/Minecraft.Client/Windows64/Windows64_Minecraft.cpp b/Minecraft.Client/Windows64/Windows64_Minecraft.cpp
+diff --git a/Source/Minecraft.Client/Windows64/Windows64_Minecraft.cpp b/Source/Minecraft.Client/Windows64/Windows64_Minecraft.cpp
 index d2251e4e..6b44278c 100644
---- a/Minecraft.Client/Windows64/Windows64_Minecraft.cpp
-+++ b/Minecraft.Client/Windows64/Windows64_Minecraft.cpp
+--- a/Source/Minecraft.Client/Windows64/Windows64_Minecraft.cpp
++++ b/Source/Minecraft.Client/Windows64/Windows64_Minecraft.cpp
 @@ -476,9 +476,9 @@ HRESULT InitDevice()
  app.DebugPrintf("width: %d, height: %d\n", width, height);
  
