@@ -1,7 +1,9 @@
 # MinecraftConsoles
-Minecraft Console Legacy Edition source code with some scripts and patches. This repository doesn't include the source code itself, only patches
+Minecraft Console Legacy Edition source code with some scripts and patches. This repository doesn't include the source code itself.
 
 See [Docs](/Docs) for steps on how to build
+
+See [Scripts](/Scripts) for various scripts that could be useful for development
 
 ## Setting up source
 Copy the original source code to `Scripts`, then run the `Apply-Patches.sh` script (can be run in Git Bash)
